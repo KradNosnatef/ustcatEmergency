@@ -14,7 +14,7 @@ public class UsersDAO {
 
     //简单查询区
     public List<Map<String, Object>> queryByUsername(String username) {
-        String sql = "select users.username,users.uid from users where users.username=?";
+        String sql = "select users.username,users.enabled from users where users.username=?";
         List<Map<String, Object>> list;
         list = jdbcTemplate.queryForList(sql, username);
         return (list);
