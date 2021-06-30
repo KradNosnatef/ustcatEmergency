@@ -178,7 +178,8 @@
 	}
 
 	.iconfont {
-		font-size: 1rem;
+		font-size: 1.2rem;
+		color: #E4E4E4;
 	}
 
 	.item_icon {
