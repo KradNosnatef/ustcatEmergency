@@ -18,4 +18,5 @@ public class IOToolKits {
     public static String getName(){//快速查询本session对应的name
         return(SecurityContextHolder.getContext().getAuthentication().getName());
     }
+    
 }
