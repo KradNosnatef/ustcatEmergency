@@ -12,7 +12,7 @@
 		<div class="footer_guide">
 			<a class="guide_item">
 				<span class="item_icon">
-					<router-link to='/ome' class="iconfont">首页</router-link>
+					<router-link to='/Home' class="iconfont">首页</router-link>
 				</span>
 			</a>
 		</div>
@@ -83,23 +83,6 @@
 					}
 				)
 			},
-			logout() {
-				jsonp(
-					//"/Xapi/logout",
-					"http://192.168.3.14:8086/logout", {
-						param: "callback",
-						timeout: 3000,
-						prefix: "callback",
-						name: "callback_IOlogout"
-					},
-					(err, data) => {
-						if (err) {} else {
-							console.log(data);
-						}
-					}
-				);
-				window.sessionStorage.clear();
-			},
 			routerPointer(dest) {
 				this.$router.push(dest);
 			},
@@ -128,7 +111,7 @@
 		mounted() {
 			this.getUsername();
 			this.adminCheck();
-			this.$router.push("/home");
+			this.$router.push("/Home");
 		}
 	}
 </script>
