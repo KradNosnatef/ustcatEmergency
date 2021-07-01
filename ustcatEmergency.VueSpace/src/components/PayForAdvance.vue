@@ -31,6 +31,7 @@
 							alert("发送垫付数据时出错");
 						} else {
 							console.log(data);
+							alert("申报成功！");
 						}
 					}
 
