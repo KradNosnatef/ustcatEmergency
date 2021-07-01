@@ -15,6 +15,11 @@
 					<router-link to='/Home' class="iconfont">首页</router-link>
 				</span>
 			</a>
+			<a class="guide_item">
+				<span class="item_icon">
+					<router-link to='/PayForAdvance' class="iconfont">我要垫付</router-link>
+				</span>
+			</a>
 		</div>
 		<!-- v-on:事件标签="函数名" -->
 		<router-view style="height:auto;margin-bottom: 7.5rem;overflow-y: hidden;" v-on:setRouterPointer="routerPointer"
@@ -161,7 +166,7 @@
 	}
 
 	.iconfont {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		color: #E4E4E4;
 	}
 
